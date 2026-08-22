@@ -1,0 +1,24 @@
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 11:03:09  - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:/pruebas' no existe.
+
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 11:04:50 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:/pruebas' no existe.
+
+[EXITO] - Fecha/Hora: 2026-08-21 11:05:31 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:/pruebas' fue eliminada con exito.
+
+[EXITO] - Fecha/Hora: 2026-08-21 11:19:29 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:/RappiPay/CO/2026/Mes/dia' fue eliminada con exito.
+
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 11:37:50 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:/pruebas' no existe.
+
+[EXITO] - Fecha/Hora: 2026-08-21 11:38:48 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:/pruebas' fue eliminada con exito.
+
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 12:43:30 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'Local Disk(C:)/RappiPay/CO/2026/Mes/dia' no existe.
+
+[EXITO] - Fecha/Hora: 2026-08-21 12:46:04 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:\RappiPay\CO\' fue eliminada con exito.
+
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 12:47:08 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:\RappiPay\CO\2026' no existe.
+
+[EXITO] - Fecha/Hora: 2026-08-21 12:51:54 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:\RappiPay\CO\2026' fue eliminada con exito.
+
+[ADVERTENCIA] - Fecha/Hora: 2026-08-21 18:34:45 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:\RappiPay\CO\2026\*' no existe.
+
+[EXITO] - Fecha/Hora: 2026-08-21 18:35:52 - Ejecutado por: COPW0N253GPAY\a.marquez - Detalle: La carpeta 'C:\RappiPay\CO\2026\*' fue eliminada con exito.
+
