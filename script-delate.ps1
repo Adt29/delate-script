@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-$actualYear = (Get-Date).Year
-$rutaBase = "C:\RappiPay\CO" #TODO: debo cambiar la ruta ya que puse una random para pruebas (esperando que gabriela me mande la ruta exacta)  C:/RappiPay/CO/2026/Mes/dia -  Local Disk (C:) / RappiPay / CO/ 2026/ Mes/ día
-
-$RutaCarpetaDelate = Join-Path -Path $RutaBase -ChildPath "$actualYear\*" 
-
-$RutaArchivoEvidencia  = "C:\delate-script\logs\logs.txt" # ruta donde se guardara los logs, (cambiar esta ruta dependiendo donde se guarda el script)
-
-
-$fechaHora = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-$responsable   = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
-
-
-if (Test-Path -Path $RutaCarpetaDelate) {
-    try {
-        Remove-Item -Path $RutaCarpetaDelate -Recurse -Force -ErrorAction Stop
-        
-        $LogData = "[EXITO] - Fecha/Hora: $fechaHora - Ejecutado por: $responsable - Detalle: La carpeta '$RutaCarpetaDelate' fue eliminada con exito."
-        Write-Host $LogData -ForegroundColor Green
-    }
-    catch {
-        $LogData = "[ERROR] - Fecha/Hora: $fechaHora - Ejecutado por: $responsable - Detalle: Fallo al eliminar '$RutaCarpetaDelate'. Razon: $_"
-        Write-Host $LogData -ForegroundColor Red
-    }
-} else {
-    $LogData = "[ADVERTENCIA] - Fecha/Hora: $fechaHora - Ejecutado por: $responsable   - Detalle: No se ejecuto el borrado porque la ruta '$RutaCarpetaDelate' no existe."
-    Write-Host $LogData -ForegroundColor Yellow
-}
-
-
-=======
 $actualYear = (Get-Date).Year
 $rutaBase = "C:\RappiPay\CO" #TODO: debo cambiar la ruta ya que puse una random para pruebas (esperando que gabriela me mande la ruta exacta)  C:/RappiPay/CO/2026/Mes/dia -  Local Disk (C:) / RappiPay / CO/ 2026/ Mes/ día
 
@@ -58,5 +27,4 @@ if (Test-Path -Path $RutaCarpetaDelate) {
 }
 
 
->>>>>>> 781c9b71ea5a92cd12237e3153c53babda6abb57
 Add-Content -Path $RutaArchivoEvidencia -Value @($LogData, "")  #aqui se va agregar los mensajes al log.txt
