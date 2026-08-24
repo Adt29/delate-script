@@ -1,2 +1,0 @@
-[ADVERTENCIA] - Fecha/Hora: 2026-08-24 11:09:22 - Ejecutado por: COPW0N253GPAY\a.marquez   - Detalle: No se ejecuto el borrado porque la ruta 'C:\RappiPay\CO\2026\*' no existe.
-
