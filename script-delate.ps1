@@ -1,12 +1,12 @@
 $actualYear = (Get-Date).Year
-$rutaBase = "C:\RappiPay\CO" #TODO: debo cambiar la ruta ya que puse una random para pruebas (esperando que gabriela me mande la ruta exacta)  C:/RappiPay/CO/2026/Mes/dia -  Local Disk (C:) / RappiPay / CO/ 2026/ Mes/ día
+$rutaBase = "C:\RappiPay\CO"
 
 $RutaCarpetaDelate = Join-Path -Path $RutaBase -ChildPath "$actualYear\*"
 
 $LogDir = "C:\delate-script\logs"
 $RutaArchivoEvidencia = Join-Path -Path $LogDir -ChildPath "logs.txt"
 
-# Crear la carpeta de logs si no existe
+# La carpeta logs si no existe aca lo que hara es crearlo
 if (-not (Test-Path -Path $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 }
