@@ -6,7 +6,8 @@ $RutaCarpetaDelate = Join-Path -Path $RutaBase -ChildPath "$actualYear\*"
 $LogDir = "C:\delate-script\logs"
 $RutaArchivoEvidencia = Join-Path -Path $LogDir -ChildPath "logs.txt"
 
-# La carpeta logs si no existe aca lo que hara es crearlo
+$SDeleteExe = "C:\sdelete\sdelete.exe"
+
 if (-not (Test-Path -Path $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
 }
@@ -17,7 +18,9 @@ $responsable   = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 
 if (Test-Path -Path $RutaCarpetaDelate) {
     try {
-        Remove-Item -Path $RutaCarpetaDelate -Recurse -Force -ErrorAction Stop
+        & $SDeleteExe -s -p 3 -accepteula -nobanner $RutaCarpetaDelate
+
+        if ($LASTEXITCODE -ne 0) { throw "sdelete finalizó con código de error $LASTEXITCODE" }
         
         $LogData = "[EXITO] - Fecha/Hora: $fechaHora - Ejecutado por: $responsable - Detalle: La carpeta '$RutaCarpetaDelate' fue eliminada con exito."
         Write-Host $LogData -ForegroundColor Green
@@ -32,4 +35,4 @@ if (Test-Path -Path $RutaCarpetaDelate) {
 }
 
 
-Add-Content -Path $RutaArchivoEvidencia -Value @($LogData, "")  #aqui se va agregar los mensajes al log.txt
+Add-Content -Path $RutaArchivoEvidencia -Value @($LogData, "")
